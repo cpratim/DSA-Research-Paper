@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 from pprint import pprint
 import numpy as np
 from scipy.stats import linregress
-
-def correlation(x, y):
-	return np.corrcoef(x, y)[0, 1]
+from util.stats import *
 
 with open('data/game_stats.json', 'r') as f:
 	df = json.load(f)
